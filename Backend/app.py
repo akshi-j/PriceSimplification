@@ -17,16 +17,6 @@ firebase = pyrebase.initialize_app(config)
 
 db = firebase.database()
 
-# db.child("Products").push({"sku": "50"})
-# db.child("Products").child("50").update({"Price" : "100"})
-# db.child("Products").child("Product1").update({"LastUpdated" : "01/01/01"})
-# db.child("Products").child("Product1").update({"Price" : "100"})
-# db.child("Products").child("Product1").push({"Price": "100"})
-# db.child("Products").remove()
-# db.child("Products").child("150").update({"Price" : "200"})
-#db.child("Products").child("50").update({"LastUpdated" : "02/02/02"})
-
-# print (product.val())
 app = Flask(__name__)
 CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
